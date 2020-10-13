@@ -13,8 +13,8 @@ function Contact(props) {
       <div>
         <p className="name">{props.name}</p>
         <div className="status">
-          <div className={props.isOnline ? 'status-online' : 'status-offline'} />
-          <p className="status-text">{props.isOnline ? 'online' : 'offline'}</p>
+          <div className={props.online ? 'status-online' : 'status-offline'} />
+          <p className="status-text">{props.online ? 'online' : 'offline'}</p>
         </div>
       </div>
     </div>
@@ -24,7 +24,7 @@ function Contact(props) {
 Contact.propTypes = {
     name: Proptypes.string,
     avatar: Proptypes.string,
-    isOnline: Proptypes.bool,
+    online: Proptypes.bool,
 }
 
 
